@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="entities.Product" table="Products">
+        <id name="ID" column="ID"/>
+        <property name="Name" column="Name"/>
+        <property name="CategoryID" column="CategoryID"/>
+        <property name="Cost" column="Cost"/>
+        <property name="InStock" column="InStock"/>
+    </class>
+</hibernate-mapping>

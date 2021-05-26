@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=UNIVERMAG</property>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.username">univermag</property>
+        <property name="connection.password">password</property>
+        <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping resource="entities Maps/Shop.hbm.xml" />
+        <mapping resource="entities Maps/Product.hbm.xml" />
+        <mapping resource="entities Maps/Category.hbm.xml" />
+        <mapping resource="entities Maps/Seller.hbm.xml" />
+
+        <mapping resource="entities Maps/Shop.hbm.xml" />
+        <mapping resource="entities Maps/Product.hbm.xml" />
+        <mapping resource="entities Maps/Category.hbm.xml" />
+        <mapping resource="entities Maps/Seller.hbm.xml" />
+        <mapping resource="entities Maps/Auth.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
